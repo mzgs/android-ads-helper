@@ -7,7 +7,7 @@ class Ads {
     companion object{
 
         fun  Print  (msg:Any ) {
-            Log.d("mzgs_ads", msg.toString());
+            Log.d("mzgs_ads", msg.toString())
         }
 
 
