@@ -36,4 +36,5 @@ dependencies {
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'com.applovin:applovin-sdk:+'
     implementation 'androidx.lifecycle:lifecycle-process:2.5.1'
+    implementation 'com.google.android.gms:play-services-ads:21.5.0'
 }

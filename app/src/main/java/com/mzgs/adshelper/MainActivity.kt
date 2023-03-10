@@ -3,6 +3,7 @@ package com.mzgs.adshelpertest
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.mzgs.adshelper.AdmobHelper
 import com.mzgs.adshelper.MaxHelper
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
@@ -18,13 +19,18 @@ class MainActivity : AppCompatActivity() {
           Log.d("mzgs","max init")
 
 //          MaxHelper.ShowMREC(this, findViewById(R.id.banner) ,"ascasc")
-          MaxHelper.InitRewarded(this,"asdsadad")
+//          MaxHelper.InitRewarded(this,"asdsadad")
 //          MaxHelper.InitAppOpen(this,"dsvsdvs")
 
-          MaxHelper.ShowNative(this, findViewById(R.id.banner) ,"ascasc")
+//          MaxHelper.ShowNative(this, findViewById(R.id.banner) ,"ascasc")
 
 
       }
+
+
+        AdmobHelper.Init(this){
+
+        }
 
         GlobalScope.async {
 //            MaxHelper.showAds = false
@@ -33,8 +39,8 @@ class MainActivity : AppCompatActivity() {
 
             delay(15000L)
 
-            MaxHelper.LoadNativeAd()
-             Log.d("mzgs","native reloaded")
+//            MaxHelper.LoadNativeAd()
+//             Log.d("mzgs","native reloaded")
 
 
         }
