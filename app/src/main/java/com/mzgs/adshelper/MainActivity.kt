@@ -15,21 +15,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-      MaxHelper.Init(this){
-          Log.d("mzgs","max init")
-
-//          MaxHelper.ShowMREC(this, findViewById(R.id.banner) ,"ascasc")
-//          MaxHelper.InitRewarded(this,"asdsadad")
-//          MaxHelper.InitAppOpen(this,"dsvsdvs")
-
-//          MaxHelper.ShowNative(this, findViewById(R.id.banner) ,"ascasc")
-
-
-      }
+//      MaxHelper.Init(this){
+//          Log.d("mzgs","max init")
+//
+////          MaxHelper.ShowMREC(this, findViewById(R.id.banner) ,"ascasc")
+////          MaxHelper.InitRewarded(this,"asdsadad")
+////          MaxHelper.InitAppOpen(this,"dsvsdvs")
+//
+////          MaxHelper.ShowNative(this, findViewById(R.id.banner) ,"ascasc")
+//
+//
+//      }
 
 
         AdmobHelper.Init(this){
 
+            AdmobHelper.ShowBanner(this,findViewById(R.id.banner))
+
+            AdmobHelper.ShowInterstitial(this)
         }
 
         GlobalScope.async {
