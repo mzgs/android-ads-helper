@@ -17,6 +17,6 @@ allprojects {
 ### Step 2. Add the dependency
 ```
 dependencies {
-	        implementation 'com.github.mzgs:android-ads-helper:latest'
+	        implementation 'com.github.mzgs:android-ads-helper:+'
 	}
 ```
